@@ -1,3 +1,6 @@
+   library("shiny")
+   library("bslib")
+
 # Define the User Interface (Frontend)
 ui <- page_fluid(
   layout_columns(
@@ -18,7 +21,8 @@ ui <- page_fluid(
       card_header("Virtual Gene Generator"),
       sliderInput(inputId = "n_bases",
                   label = "Number of bases:",
-                  min = 1,
+                  min = 3,
+                  step = 3,
                   max = 60,
                   value = 30,
                   width = "100%"),
