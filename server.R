@@ -1,3 +1,6 @@
+   library("shiny")
+   source(file = "app_functions.R")
+
 # Define the Server (Backend)
 server <- function(input, output) {
   dna <- reactive({
